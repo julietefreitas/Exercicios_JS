@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios_JS</title>
+</head>
+
+<body>
+  <script>
+    function sobreMim() {
+      var nome = "Juliete";
+      var filhos = "um";
+      var cidade = "Berlin";
+      var profissao = "Desenvolvedora Web";
+      document.write("*********************************************************************************************");
+      document.write("<h3> A vidente prevê que " + nome + " terá " + filhos + " filho e viverá em "
+        + cidade + ", " + "trabalhando como " + profissao + " >.<" + "</h3>");
+        pulaLinha();
+      }
+      function ilhaDeserta() {
+        var item1 = "comida";
+        var item2 = "água";
+        var item3 = "um bom livro";
+        document.write("*********************************************************************************************");
+        document.write("<h3> Eu levaria para um ilha deserta " + item1 + ", " + item2 + " e " + item3 + "." + "</h3>");
+        pulaLinha();
+      }
+      function pulaLinha() {
+        document.write("<br>");
+      }
+      function escolhaAnimal(animalzinho) {
+        document.write("*********************************************************************************************");
+        document.write("<h3>" + animalzinho + "</h3>");
+        pulaLinha();
+        //animal = "gato";
+      }
+      function dobro(numero) { // também posso criar dentro das funções, variáveis pra receber resultados e afins
+        document.write("<h3>Dobro é : " + numero * 2 + "</h3>");
+        pulaLinha();
+      }
+      function metade(numero) {
+        document.write("<h3>A metade é : " + numero / 2 + "</h3>");
+        pulaLinha();
+      }
+      function saudacao(nome) {
+        document.write("<h3>Olá " + nome + " !" + "</h3>");
+        pulaLinha();
+      }
+      //chamadas das funções
+      sobreMim(); // posso chamar as funções depois de criá-las, mas também posso chamar no final;
+      ilhaDeserta();
+      var animal = "cervo";
+      escolhaAnimal("Num primeiro momento, eu gostaria de ser um(a):" + animal);
+      animal = "gato";
+      escolhaAnimal("Pensando melhor, prefiro ser um(a): " + animal);
+      document.write("<h2>Parte II do Exercício ....</h2>");
+      dobro(10);
+      metade(50); // posso colocar qualquer valor ou criar variáveis pra isso;
+      saudacao("Roberta");  
+    </script>
+  </body>
+  
+  </html>
