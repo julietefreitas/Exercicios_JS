@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function pulaLinha () {
+      document.write("<br>");
+    }
+
+    function mostrar (texto){
+      document.write("<h5><center>"+texto+"</h5></center>");
+    }
+
+    function calcularPizza (custoPizza, valorPizza, nomePizza) {
+      var imposto = (valorPizza * 0.089);
+      var lucroLiq = (valorPizza - imposto - custoPizza);
+      lucroLiq = Math.round(lucroLiq*100)/100;
+      mostrar("Para a pizza de "+nomePizza+" o lucro líquido  é de R$ " +lucroLiq+ " e o imposto é de R$ "+imposto);
+    }
+    var custoPizza = prompt("Informe o custo da PIZZA");
+    var valorPizza = prompt("Informe o valor da PIZZA");
+    var nomePizza = prompt("Informe o sabor da PIZZA");
+    calcularPizza(custoPizza,valorPizza,nomePizza);
+
+  </script>
+</body>
+</html>
