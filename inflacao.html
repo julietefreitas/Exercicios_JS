@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function pulaLinha () {
+      document.write("<br><br>");
+    }
+    function mostrar (texto){
+      document.write("<h4>"+texto+"</h4>");
+      pulaLinha ();
+    }
+    function calcularInflacao(precoInicial, precoFinal){
+      var inflacaoPeriodo = (precoFinal - precoInicial);
+      return inflacaoPeriodo;
+    }
+    function  calcularInflacaoDiaria (nome, inflacaoprodutos) {
+      var inflacaodias = (inflacaoprodutos/6);
+      mostrar ("A inflação do(a) " +nome+ " é " + arredondar(inflacaoprodutos)+ " , e a inflação diária é de " + arredondar(inflacaodias));
+    }
+    function calcularMedia (infla1, infla2, infla3) {
+      var resultado= (infla1+infla2+infla3)/3;
+      mostrar("A média dos produtos é: "+arredondar(resultado));
+    }
+    function arredondar(valor) {
+      var arredondar = (Math.round(valor*100)/100);
+      return arredondar;
+    }
+    var inflacaoTomate = calcularInflacao(3.30, 4.70);
+    var inflacaoArroz =calcularInflacao(2.99, 3.25);
+    var inflacaoCenoura =calcularInflacao(3.99,4.14);
+    calcularInflacaoDiaria("tomate",inflacaoTomate);
+    calcularInflacaoDiaria("arroz",inflacaoArroz);
+    calcularInflacaoDiaria("cenoura",inflacaoCenoura);;
+    calcularMedia(inflacaoTomate,inflacaoArroz,inflacaoCenoura);
+  </script>
+</body>
+</html>
