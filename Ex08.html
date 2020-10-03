@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Exibindo Menu</title>
+</head>
+<body>
+  <script>
+    function mostrar (texto){
+      document.write("<h5>"+texto+"</h5>");
+    }
+    function exibirMenu () {
+      document.write("<h4>1-Refrigerante</h4>");
+      document.write("<h4>2-Suco</h4>");
+      document.write("<h4>3-Água</h4>");
+      document.write("<h4>4-Cerveja</h4>");
+    }
+    function escolhaItem(item) {
+      if (item == 1) {
+        return mostrar(("Você escolheu Refrigerante, item 1"));
+      }else if (item == 2){
+        return mostrar(("Você escolheu Suco, item 2"));
+      }else if (item == 3){
+        return mostrar(("Você escolheu Água, item 3"));
+     }else if (item == 4){
+        return mostrar(("Você escolheu Cerveja, item 4"));
+     }else {
+      return mostrar(("Item não está na lista de menu!"));
+      }
+    }
+    exibirMenu();
+    var escolha = prompt("1-Refrigerante\n2-Suco\n3-Água\n4-Cerveja");
+    escolhaItem(escolha);
+  </script>
+</body>
+</html>

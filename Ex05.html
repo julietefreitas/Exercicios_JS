@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Posso Beber?</h1>
+  <script>
+    function dirigir (idadeUsuario, idadePermitida){
+      if (idadeUsuario >= idadePermitida){
+        return("Você pode beber!");
+      } else {
+        return ("Você não pode beber!");
+      }
+    }
+    var idUsuario= parseInt(prompt("Digite sua idade"));
+    var idPermitida = parseInt(prompt("Digite a idade permitida para beber no seu país"));
+    document.write("<h4>"+dirigir(idUsuario,idPermitida)+"</h4>");
+  </script>
+</body>
+</html>

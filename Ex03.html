@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function pulaLinha (){
+    document.write("<br>");
+    }
+    function mostrar (texto){
+      document.write("<h4>"+texto+"</h4>");
+      pulaLinha ();
+    }
+    function calcularResto (numero) {
+      var restoNumero = numero%9;
+      if (numero >=9) {
+      return mostrar("O resto de "+ numero+  " por 9 é " + "<h2>"+restoNumero+"</h2>");
+      }else {
+        return mostrar("Esse valor não possui resto!")
+      }
+      // ou criar variavel pra armazenar o retorno e exibir ou usar document.write //
+    }
+    var num = prompt("Digite num número");
+    calcularResto(num);
+  </script>
+</body>
+</html>

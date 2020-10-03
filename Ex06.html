@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Observe o Sinal</h1>
+  <script>
+    function exibeSemaforo (estado) {
+      if (estado == "verde"|| estado == "Verde" || estado == "VERDE") {
+        return ("Pode passar!");
+      }else if (estado == "amarelo" || estado == "Amarelo" || estado == "AMARELO") {
+      return ("Melhor freiar!");
+      }
+      else if (estado == "vermelho" || estado == "Vermelho" || estado == "VERMELHO"){
+        return ("Pare Já!");
+      }else {
+        return alert(("Estado do sinal é inválido!"));
+      }
+    }
+  document.write("<h4>"+exibeSemaforo(prompt("Informe o estado do sinal"))+"</h4>");
+
+  </script>
+</body>
+</html>
