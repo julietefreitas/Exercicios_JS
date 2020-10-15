@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+  var alunos = ["Greice","Juliete","Carlos","Alice"];
+  var listaPresenca= ["Greice","Carlos","Juliete"];  
+
+  function comparar (alunos,presentes) {
+    var quantidadeAlunos =0;
+    for(var i=0; i<presentes.length;i++) { 
+      if (listaPresenca.indexOf(alunos[i])!= -1) {
+        quantidadeAlunos++;
+      }
+    }
+    return quantidadeAlunos;
+  }
+  console.log("Alunos presentes neste dia:",comparar(alunos,listaPresenca));
+</script>
