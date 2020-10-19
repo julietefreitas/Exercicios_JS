@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "style.css">
+  <title>Criando Botões</title>
+</head>
+<body>
+      <button class = "botoes" onclick="criandoBotoes()">Criar botões</button>
+      <br>
+
+
+  <script>
+    var escolha = 0;
+    function criandoBotoes () {
+      //var div = document.getElementById("container");
+      if (escolha == 0) {
+        var div = document.createElement("div"); // criei uma div para ser container dos botoes
+        for (var i=1; i<=19;i++) {
+        var botao = document.createElement("button"); // faço a variavel botao receber um elemento novo estilo button 
+        var texto = document.createTextNode("Botão nº: "+i); // a variavel texto vai receber um novo texto, botao variações do id
+        div.append(botao); // adiciono o botao dentro da div criada acima
+        botao.append(texto);  // adiciono o texto com o numero do botao dentro do proprio botao
+        //estiloBotao(botao); // chamo a função de estilização do botao, a cada criação nova , poderia ser feita após tb, no js.
+        }
+        document.body.appendChild(div);
+        escolha++;
+      }else {
+        alert("Os botões já foram criados!")
+      }
+    }
+      // função de estilização dos botoes
+       /* function estiloBotao(botao) {
+      botao.style.background = "#fa4"; 
+      botao.style.fontFamily = "Raleway";
+      botao.style.fontSize = "18px";
+      botao.style.borderRadius = "4px";
+      botao.style.fontWeight = "bold";
+      botao.style.padding = "4px";
+      botao.style.margin= "5px";
+      } */
+
+  
+    
+
+
+
+  </script>
+  
+</body>
+</html>
