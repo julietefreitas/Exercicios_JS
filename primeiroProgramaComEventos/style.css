@@ -1,0 +1,8 @@
+div {
+  border: 2px dashed black;
+  border-radius: 4px;
+  width: 15%;
+  text-align: center;
+  margin-top: 20px;
+  background: #fa4;
+}
